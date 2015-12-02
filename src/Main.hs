@@ -3,4 +3,4 @@ import Tsuru
 
 -- | 'main' runs the main program
 main :: IO ()
-main = getArgs >>= print . haqify . head
+main = getArgs >>= haqify . head >>= print
