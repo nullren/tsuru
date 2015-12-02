@@ -1,3 +1,5 @@
 module Tsuru (haqify) where
 
-haqify s = "Haq! " ++ s
+import Network.Pcap
+
+haqify file = "Haq! " ++ file
